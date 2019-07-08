@@ -1,4 +1,4 @@
-class CreateTaxonMapGoogle < ActiveRecord::Migration
+class CreateTaxonMapGoogle < ActiveRecord::Migration[5.2]
   def self.up
     create_table :taxon_map_google do |t|
       t.integer :taxon_id

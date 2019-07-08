@@ -1,4 +1,4 @@
-class RemovePriority < ActiveRecord::Migration
+class RemovePriority < ActiveRecord::Migration[5.2]
   def self.up
     remove_column :spree_taxon_mappings, :priority
   end

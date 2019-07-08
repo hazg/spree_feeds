@@ -1,4 +1,4 @@
-class RenameTaxonMap < ActiveRecord::Migration
+class RenameTaxonMap < ActiveRecord::Migration[5.2]
   def self.up
     rename_table :taxon_map_google, :spree_taxon_mappings
     rename_column :spree_taxon_mappings, :product_type, :google_taxon
